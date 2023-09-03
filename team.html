@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/logo-light.png" alt="">
+            </a>
+            <ul class="nav-items">
+                <li><a href="#home" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="services.html" class="nav-item">Services</a></li>
+                <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+                <li><a href="#team" class="nav-item">Team</a></li>
+                <li><a href="#blog" class="nav-item">Events</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+            <div class="nav-toggler"><i class="ri-menu-fill"></i></div>
+        </div>
+    </nav>
+    <h1 class="teams">Our Team</h1>
+    <div class="teamimages">
+        <div class="teamimages101" onclick="fetch_infocon(0)"><img src="assets/images/portfolio-1.jpg" alt=""></div>
+        <div class="teamimages101" onclick="fetch_infocon(1)"><img src="assets/images/portfolio-2.jpg" alt=""></div>
+        <div class="teamimages101" onclick="fetch_infocon(2)"><img src="assets/images/portfolio-3.jpg" alt=""></div>
+        <div class="teamimages101" onclick="fetch_infocon(3)"><img src="assets/images/portfolio-4.jpg" alt=""></div>
+        <div class="teamimages101" onclick="fetch_infocon(4)"><img src="assets/images/portfolio-5.jpg" alt=""></div>
+    </div>
+    <div class="infocon101">
+        <img class="profile" id="profile" src="assets/images/b2.jpg" alt="">
+        <div class="infocon">
+            <h1 class="teamnames" id="teamnames">Irene Osuji</h1>
+            <h3 class="teamstatus" id="teamstatus" >Founder/Director</h3>
+            <p class="teamabout " id="teamabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quo, corporis tempora. Soluta atque distinctio corporis, 
+                amet adipisci ipsa recusandae alias obcaecati qui sed 
+                laudantium est iusto, repudiandae expedita minus ea.
+            </p>
+    
+        </div>
+    </div>
+    
+    
+    <script>
+        function fetch_infocon(i) {
+            let profile = ["assets/images/portfolio-1.jpg","assets/images/portfolio-2.jpg","assets/images/portfolio-3.jpg","assets/images/portfolio-4.jpg","assets/images/portfolio-5.jpg"];
+            let teamnames = [
+                "Gregory Osuji",
+                "Irene Osuji",
+                "Osagwu Ifeanyi",
+                "Gregory Osuji",
+                "Irene Osuji"
+            ];
+            let teamstatus = [
+                "Director",
+                "Assistant Director", 
+                "Instructor",
+                "Director", 
+                "Assistant Director"
+            ];
+            document.getElementById("profile").src=profile[i];
+            document.getElementById("teamnames").innerHTML=teamnames[i];
+            document.getElementById("teamstatus").innerHTML=teamstatus[i];
+            document.getElementById("teamabout").innerHTML=teamnames[i] + "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, porro! Iusto recusandae perferendis, adipisci voluptatum dolor voluptas possimus illo facilis, voluptatibus, necessitatibus itaque. Ipsum saepe beatae eius tempore labore voluptates Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, porro! Iusto recusandae perferendis, adipisci voluptatum dolor voluptas possimus illo facilis, voluptatibus, necessitatibus itaque. Ipsum saepe beatae eius tempore labore voluptates."; 
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "https://www.google.com/maps?q=america&um=1&ie=UTF-8&sa=X&ved=2ahUKEwikgeiY87v5AhVFnf0HHUMqCPcQ_AUoAXoECAIQAw",
+    "sources": [
+        "sty.scss"
+    ],
+    "names": [],
+    "file": "sty.css"
+}
